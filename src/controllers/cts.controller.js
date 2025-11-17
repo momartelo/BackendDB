@@ -1,7 +1,20 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const dbPath = path.resolve("src/data/db.json");
+// Obtener __dirname real
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Ruta local normal
+let dbPath = path.join(__dirname, "..", "data", "db.json");
+
+// Si estamos en Render, usar /tmp/db.json
+if (process.env.RENDER) {
+  dbPath = "/tmp/db.json";
+}
+
+console.log("dbPath usado:", dbPath);
 
 function readDB() {
   return JSON.parse(readFileSync(dbPath, "utf8"));
@@ -10,6 +23,8 @@ function readDB() {
 function saveDB(data) {
   writeFileSync(dbPath, JSON.stringify(data, null, 2));
 }
+
+// ==================== PRODUCTS ====================
 
 export const getProducts = (req, res) => {
   const db = readDB();
@@ -46,8 +61,7 @@ export const updateProduct = (req, res) => {
 
 export const deleteProduct = (req, res) => {
   const db = readDB();
-  const filtered = db.products.filter((p) => p.id != req.params.id);
-  db.products = filtered;
+  db.products = db.products.filter((p) => p.id != req.params.id);
   saveDB(db);
   res.json({ message: "Producto eliminado" });
 };
