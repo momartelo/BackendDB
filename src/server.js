@@ -3,6 +3,7 @@ import cors from "cors";
 import productsRoutes from "./routes/products.routes.js";
 import fs from "fs";
 import path from "path";
+import favRouter from "./routes/favorites.routes.js";
 
 // Detectar si estamos en Render (producción)
 const isRender = process.env.RENDER === "true";
@@ -44,6 +45,8 @@ app.use((req, res, next) => {
   req.dbPath = dbPath;
   next();
 });
+
+app.use("/favorites", favRouter);
 
 const PORT = process.env.PORT || 3001;
 
