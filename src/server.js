@@ -48,6 +48,30 @@ app.use((req, res, next) => {
 
 app.use("/favorites", favRouter);
 
+// -----------------------------------------------------------
+
+// Ver contenido actual de la DB (temp.json o /tmp/db.json)
+app.get("/debug/db", (req, res) => {
+  try {
+    const contenido = fs.readFileSync(req.dbPath, "utf8");
+    res.setHeader("Content-Type", "application/json");
+    res.send(contenido);
+  } catch (err) {
+    res.status(500).send("Error leyendo DB: " + err.message);
+  }
+});
+
+// Ver qué archivo está usando la app como DB
+app.get("/debug/path", (req, res) => {
+  res.json({
+    renderMode: process.env.RENDER,
+    dbPath: req.dbPath,
+    exists: fs.existsSync(req.dbPath),
+  });
+});
+
+// --------------------------------------------------------
+
 const PORT = process.env.PORT || 3001;
 
 app.use("/api/products", productsRoutes);
