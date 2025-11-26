@@ -275,16 +275,20 @@
       "productId": 2
     },
     {
-      "userId": 1,
-      "productId": 1
-    },
-    {
       "userId": 9,
       "productId": 5
     },
     {
       "userId": 9,
       "productId": 6
+    },
+    {
+      "userId": 1,
+      "productId": 4
+    },
+    {
+      "userId": 1,
+      "productId": 5
     }
   ]
 }
