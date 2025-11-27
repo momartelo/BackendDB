@@ -4,6 +4,7 @@ import productsRoutes from "./routes/products.routes.js";
 import fs from "fs";
 import path from "path";
 import favRouter from "./routes/favorites.routes.js";
+import usersRouter from "./routes/users.routes.js";
 
 // Detectar si estamos en Render (producción)
 const isRender = process.env.RENDER === "true";
@@ -47,6 +48,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/favorites", favRouter);
+
+app.use("/api/users", usersRouter);
 
 const PORT = process.env.PORT || 3001;
 

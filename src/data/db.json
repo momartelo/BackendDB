@@ -290,5 +290,207 @@
       "userId": 1,
       "productId": 5
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Martín Martínez",
+      "email": "martin@example.com",
+      "password": "123456",
+      "phone": "+54 9 11 1234-5678",
+      "birthDate": "1990-05-12",
+      "gender": "masculino",
+      "address": {
+        "street": "Av. Corrientes 1234",
+        "city": "Buenos Aires",
+        "province": "Buenos Aires",
+        "postalCode": "1043",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-01-15T09:30:00Z",
+      "lastLogin": "2025-10-27T18:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Lucía López",
+      "email": "lucia.lopez@example.com",
+      "password": "lucia123",
+      "phone": "+54 9 11 4321-8765",
+      "birthDate": "1995-08-24",
+      "gender": "femenino",
+      "address": {
+        "street": "Calle San Martín 456",
+        "city": "Rosario",
+        "province": "Santa Fe",
+        "postalCode": "2000",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-03-05T11:10:00Z",
+      "lastLogin": "2025-10-28T10:45:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Pedro Pérez",
+      "email": "pedro.perez@example.com",
+      "password": "pedrito321",
+      "phone": "+54 9 11 2222-3333",
+      "birthDate": "1987-02-10",
+      "gender": "masculino",
+      "address": {
+        "street": "Av. Rivadavia 998",
+        "city": "La Plata",
+        "province": "Buenos Aires",
+        "postalCode": "1900",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": false,
+      "registerDate": "2024-12-01T08:45:00Z",
+      "lastLogin": "2025-08-10T17:15:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Sofía Gómez",
+      "email": "sofia.gomez@example.com",
+      "password": "sofia2024",
+      "phone": "+54 9 341 555-6677",
+      "birthDate": "1998-03-18",
+      "gender": "femenino",
+      "address": {
+        "street": "Belgrano 789",
+        "city": "Córdoba",
+        "province": "Córdoba",
+        "postalCode": "5000",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-02-20T14:00:00Z",
+      "lastLogin": "2025-10-28T09:10:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Juan Fernández",
+      "email": "juan.fernandez@example.com",
+      "password": "juanito",
+      "phone": "+54 9 223 777-9999",
+      "birthDate": "1985-11-02",
+      "gender": "masculino",
+      "address": {
+        "street": "Mitre 2345",
+        "city": "Mar del Plata",
+        "province": "Buenos Aires",
+        "postalCode": "7600",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-04-12T16:20:00Z",
+      "lastLogin": "2025-10-26T21:30:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Carla Rodríguez",
+      "email": "carla.rodriguez@example.com",
+      "password": "carla_pass",
+      "phone": "+54 9 261 555-2233",
+      "birthDate": "1993-09-30",
+      "gender": "femenino",
+      "address": {
+        "street": "Sarmiento 678",
+        "city": "Mendoza",
+        "province": "Mendoza",
+        "postalCode": "5500",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-05-10T09:50:00Z",
+      "lastLogin": "2025-10-27T08:25:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Nicolás Díaz",
+      "email": "nicolas.diaz@example.com",
+      "password": "nicolas789",
+      "phone": "+54 9 381 999-1122",
+      "birthDate": "1992-07-14",
+      "gender": "masculino",
+      "address": {
+        "street": "Calle Tucumán 432",
+        "city": "San Miguel de Tucumán",
+        "province": "Tucumán",
+        "postalCode": "4000",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": false,
+      "registerDate": "2025-06-02T10:15:00Z",
+      "lastLogin": "2025-09-05T14:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Valentina Torres",
+      "email": "valentina.torres@example.com",
+      "password": "valen@2025",
+      "phone": "+54 9 351 555-8765",
+      "birthDate": "1997-01-22",
+      "gender": "femenino",
+      "address": {
+        "street": "Av. Sabattini 1010",
+        "city": "Córdoba",
+        "province": "Córdoba",
+        "postalCode": "5000",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-07-01T13:00:00Z",
+      "lastLogin": "2025-10-28T08:00:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Diego Ramírez",
+      "email": "diego.ramirez@example.com",
+      "password": "diego456",
+      "phone": "+54 9 221 777-4455",
+      "birthDate": "1988-12-09",
+      "gender": "masculino",
+      "address": {
+        "street": "Calle 12 N°456",
+        "city": "La Plata",
+        "province": "Buenos Aires",
+        "postalCode": "1900",
+        "country": "Argentina"
+      },
+      "role": "admin",
+      "isActive": true,
+      "registerDate": "2025-01-05T08:00:00Z",
+      "lastLogin": "2025-10-27T17:30:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Laura Herrera",
+      "email": "laura.herrera@example.com",
+      "password": "laura123",
+      "phone": "+54 9 11 8765-4321",
+      "birthDate": "1991-04-03",
+      "gender": "femenino",
+      "address": {
+        "street": "Dorrego 789",
+        "city": "Buenos Aires",
+        "province": "Buenos Aires",
+        "postalCode": "1414",
+        "country": "Argentina"
+      },
+      "role": "cliente",
+      "isActive": true,
+      "registerDate": "2025-08-10T10:00:00Z",
+      "lastLogin": "2025-10-28T07:45:00Z"
+    }
   ]
 }
