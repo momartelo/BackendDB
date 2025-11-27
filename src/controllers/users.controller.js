@@ -24,13 +24,13 @@ export const loginUser = (req, res) => {
     return res.status(401).json({ error: "Credenciales incorrectas" });
   }
 
+  // Clonar el usuario para borrarle la contraseña antes de enviarlo
+  const safeUser = { ...user };
+  delete safeUser.password;
+
   res.json({
     message: "Login exitoso",
-    user: {
-      id: user.id,
-      email: user.email,
-      role: user.role,
-    },
+    user: safeUser,
   });
 };
 
@@ -38,7 +38,7 @@ export const loginUser = (req, res) => {
 // 📝 REGISTRO
 // -----------------------------------------------------------------------------
 export const registerUser = (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, name } = req.body;
 
   if (!email || !password)
     return res.status(400).json({ error: "Email y password son obligatorios" });
@@ -46,7 +46,6 @@ export const registerUser = (req, res) => {
   const db = readDB();
   if (!db.users) db.users = [];
 
-  // Verificar email existente
   const exists = db.users.some((u) => u.email === email);
   if (exists) {
     return res.status(400).json({ error: "El email ya está registrado" });
@@ -54,21 +53,28 @@ export const registerUser = (req, res) => {
 
   const newUser = {
     id: generateId(db.users),
+    name: name || "",
     email,
-    password, // SIN bcrypt porque no lo vieron
-    role: "user",
+    password,
+    role: "cliente",
+    isActive: true,
+    registerDate: new Date().toISOString(),
+    lastLogin: null,
+    address: null,
+    phone: null,
+    birthDate: null,
+    gender: null,
   };
 
   db.users.push(newUser);
   writeDB(db);
 
+  const safeUser = { ...newUser };
+  delete safeUser.password;
+
   res.json({
     message: "Usuario registrado",
-    user: {
-      id: newUser.id,
-      email: newUser.email,
-      role: newUser.role,
-    },
+    user: safeUser,
   });
 };
 
