@@ -24,13 +24,15 @@ export const loginUser = (req, res) => {
     return res.status(401).json({ error: "Credenciales incorrectas" });
   }
 
-  // Clonar el usuario para borrarle la contraseña antes de enviarlo
-  const safeUser = { ...user };
-  delete safeUser.password;
+  // Esto sive para borrar el password antes de mandarlo al front
+  // esta desactivado para probar como funcional el ProfilePage
+  // const safeUser = { ...user };
+  // delete safeUser.password;
 
   res.json({
     message: "Login exitoso",
-    user: safeUser,
+    user: user,
+    //user: safeUser,
   });
 };
 

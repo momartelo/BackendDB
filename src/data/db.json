@@ -246,7 +246,7 @@
       "price": "130",
       "description": "Xiaomi Celular Libre 8gb (4gb+4gb extension) 128gb 33w 120hz 6.9\"",
       "category": "Celulares",
-      "image": "https://www.electronicajck.com/web/image/product.product/13493/image_1024/%5B11394%5D%20Xiaomi%20Celular%20Libre%208Gb%20%284Gb%2B4Gb%20Extension%29%20128Gb%2033W%20120Hz%206.9%22?unique=4f5b3f3"
+      "image": "https://product-media.cdn.t1.com/product-channel/18410/2025/9/2/7aaa1eae10b92e38668cdf7db90c155b.jpg"
     },
     {
       "id": 1763343984411,
@@ -289,6 +289,30 @@
     {
       "userId": 1,
       "productId": 5
+    },
+    {
+      "userId": 10,
+      "productId": 17
+    },
+    {
+      "userId": 10,
+      "productId": 18
+    },
+    {
+      "userId": 10,
+      "productId": 1763396403628
+    },
+    {
+      "userId": 8,
+      "productId": 1
+    },
+    {
+      "userId": 6,
+      "productId": 2
+    },
+    {
+      "userId": 6,
+      "productId": 3
     }
   ],
   "users": [
