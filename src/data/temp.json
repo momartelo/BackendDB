@@ -27,7 +27,7 @@
     {
       "id": 3,
       "title": "Chaqueta de algodón para hombre",
-      "price": "56.99",
+      "price": "57.99",
       "description": "Chaquetas de abrigo ideales para primavera, otoño e invierno, perfectas para diversas ocasiones como el trabajo, el senderismo, el camping, la escalada, el ciclismo, los viajes y otras actividades al aire libre. Un regalo perfecto para ti o un familiar. Un detalle muy especial para un padre, esposo o hijo en Acción de Gracias o Navidad.",
       "category": "Ropa de Hombre",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
@@ -263,6 +263,14 @@
       "description": "Color\nAzul\nGénero\nHombre\nDisciplina\nRugby\nTipo de producto\nCamperas\nMarca\nLe Coq Sportif",
       "category": "Camperas",
       "image": "https://www.opensports.com.ar/media/catalog/product/cache/4cbe9863fc1e4aa316955fdd123a5af3/2/4/2410940_0.jpg"
+    },
+    {
+      "id": 1764727479672,
+      "title": "Guante Individual Aditech 24",
+      "price": "18",
+      "description": "Color Blanco\nGénero Hombre\nDisciplina Golf\nOrigen Importado\nTipo de producto Guantes\nMarca Adidas",
+      "category": "Golf",
+      "image": "https://www.opensports.com.ar/media/catalog/product/cache/4cbe9863fc1e4aa316955fdd123a5af3/I/N/IN6686_0.jpg"
     }
   ]
 }
