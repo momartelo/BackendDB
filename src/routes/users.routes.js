@@ -1,4 +1,3 @@
-// src/routes/users.routes.js
 import express from "express";
 const usersRouter = express.Router();
 
@@ -11,7 +10,6 @@ import {
 usersRouter.post("/login", loginUser);
 usersRouter.post("/register", registerUser);
 
-// Opcional (debug)
 usersRouter.get("/", getAllUsers);
 
 export default usersRouter;

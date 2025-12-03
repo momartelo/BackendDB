@@ -1,7 +1,5 @@
-// src/controllers/users.controller.js
 import { readDB, writeDB } from "../db.js";
 
-// 🔧 Generar ID incremental
 function generateId(users) {
   const maxId = users.length > 0 ? Math.max(...users.map((u) => u.id)) : 0;
   return maxId + 1;

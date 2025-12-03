@@ -1,4 +1,3 @@
-// src/routes/favoritesRoutes.js
 import express from "express";
 const favRouter = express.Router();
 

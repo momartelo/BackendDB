@@ -1,4 +1,3 @@
-// src/controllers/favoritesController.js
 import { readDB, writeDB } from "../db.js";
 
 // GET favoritos del usuario
